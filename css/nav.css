@@ -2,7 +2,7 @@
 
 .topnav {
     margin: auto;
-    background-color: #D4AF37;
+    background-color: ##000C66;
     overflow: auto;
 }
 
@@ -19,7 +19,7 @@
 
 .topnav a.hover,
 .active {
-    background-color: #d4af37;
+    background-color: #050A30;
 }
 
 .topnav .icon {
@@ -77,4 +77,9 @@
     .topnav {
         width: 100%;
     }
+}
+
+
+}
+
 }
