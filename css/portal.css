@@ -34,7 +34,7 @@
     
     h2.subheader {
         font-weight: normal;
-        margin: ;
+        margin: auto;
         background: #67B7D1;
         line-height: 5em;
     }
@@ -72,6 +72,11 @@
         h1 {
             width: 79%;
             padding-left: 1%;
+        }
+        picture.profile .img-7 {
+            width: 50%;
+            float: left;
+            margin-right: 2em;
         }
         picture.profile img {
             width: 50%;

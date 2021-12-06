@@ -2,7 +2,7 @@
 
 .topnav {
     margin: auto;
-    background-color: ##000C66;
+    background-color: #000C66;
     overflow: auto;
 }
 
@@ -77,9 +77,4 @@
     .topnav {
         width: 100%;
     }
-}
-
-
-}
-
 }
