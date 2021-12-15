@@ -1,84 +1,233 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
- <head>
-     <title>Osvaldo Vasquez Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/portal.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/forms.css" />
- </head>
- <body>
-     <header>
-     <h1>Welcome to Ozzy's Portfolio</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="https://azzyman99.github.io/stylin-with-css" target="_blank"> Stylin with CSS</a>
-            <a href="https://azzyman99.github.io/explore-california/" target="_blank"> Explore Oregon</a>
-            <a href="https://azzyman99.github.io/daily-grind/" target="_blank"> Daily Grind</a>
-            <a href="https://github.com/Azzyman99" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/azzy/" target="_blank"> LinkedIn</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-     </header>
-     
-   <main class="wrapper">
-        <picture class="profile">
-             <source media="(min-width: 1200px)" srcset="images/5.png">
-             <source media="(min-width: 1200px)" srcset="images/6.png">
-             <source media="(min-width: 1200px)" srcset="images/7.png">
-            <source media="(min-width: 501px)" srcset="images/2.jpg">
-            <img src="images/4.jpg" alt="That's me!" />
-        <picture class="profile">
-            <source media="(min-width: 1200px)" srcset="images/7.png">
-            <img src="images/6.jpg" alt="That's me!" />
-         <picture class="profile">
-            <source media="(min-width: 1200px)" srcset="images/6.png">
-            <img src="images/6.jpg" alt="That's me!" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>devOzzy Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
 
-        </picture>   
-       <h2 class="subheader">About Me </h2>
-       
-       <p>
-       Communication and public speaking go hand in hand. Being able to convey information to people whether it's to individuals or groups is vital. Along with being able to stand in front of people and not get lost in your nerves.For myself, doing this has been a staple in my life. From performing in musicals,  presenting assemblies,and helping my father dricert his workers. When helping my dad with the information I had  to give out, not only did I have  to share it with a group of people almost daily, I also had to translate it. So making sure the information is repeated loudly and clearly enough for the group to hear it but to also translate it to the best of my understanding without information getting lost in translation and giving direction . Being in front of 40-50 if not people isn't always easy, espacily the days where you were the bearer of bad news and had to tell them that we have no work for the day or when you were under a light by yourself singing a song about a blank.
-With the motivation of staff and students at year up along with my previous experiences and skills. I hope it  will lead me to be  part of a team in pursuit of a goal.
-        <h2 class = "subheader"> Revelant skills </h2>
-        <ol>
-            <li>Java</li>
-            <li>HTML/CSS</li>
-            <li>Computer Assemlby and Disassembly </li>
-            <li>Technical Issues Analysis </li>
-            <li> Wrting Bug Reports</li>
-          </ol>
-       
-       </p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          Ozzy Vasquez, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
-    </footer>
-  </main>
-     
-  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
-    <script>
-    //https://tinyurl.com/dynamic-html-checker
-    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
-      
-    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
-    
-    //manages mobile nav 
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }   
- </script>
-     
- </body>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/5.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Osvaldo Vasquez</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Aspiring Programer</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Boyqn9wq6C8" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </section>
+        
+        
+        
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I Can do have done </h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>HTML/CSS</li>
+                        <li>Python</li>
+                    </ul>
+                    
+                </div> 
+                
+                <div class="service">
+                    <h3>Prevous Prjects</h3>
+                    <ul>    
+                    <li><a href="https://azzyman99.github.io/stylin-with-css" target="_blank"> Stylin with CSS</a> </li>
+                    <li><a href="https://azzyman99.github.io/explore-california/" target="_blank"> Explore Oregon</a></li>
+                    <li><a  href="https://azzyman99.github.io/daily-grind/" target="_blank"> Daily Grind</a></li>
+                    <li><a  href="https://azzyman99.github.io/time-of-day/" target="_blank"> Tme of day</a></li>
+                    <li><a  href="https://azzyman99.github.io/guess-the-number/" target="_blank"> Guess the number</a></li>
+                    </ul>
+                </div> 
+                <div class="service">
+                    <h3>Link to Resume</h3>
+                    <a  href="https://drive.google.com/file/d/1Nypt1qr7V72XXCoqkX9t70npP6mB-Pue/view?usp=sharing" target="_blank"> Click for PDF Resume</a>
+                    
+                </div> 
+            </div>
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Programer out of Seattle</p>
+           
+           <div class="about-me__body">
+               <p>Communication and public speaking go hand in hand. Being able to convey information to people whether it's to individuals or groups is vital. Along with being able 
+                   to stand in front of people and not get lost in your nerves.For myself, doing this has been a staple in my life. From performing in musicals,  presenting assemblies,
+                   and helping my father dricert his workers. When helping my dad with the information I had  to give out, not only did I have  to share it with a group of people almost daily, 
+                   I also had to translate it. So making sure the information is repeated loudly and clearly enough for the group to hear it but to also translate it to the best of my 
+                   understanding without information getting lost in translation and giving direction . Being in front of 40-50 if not people isn't always easy, espacily the days where 
+                   you were the bearer of bad news and had to tell them that we have no work for the day or when you were under a light by yourself singing a song about a blank.
+                With the motivation of staff and students at year up along with my previous experiences and skills. I hope it  will lead me to be  part of a team in pursuit of a goal.</p>
+              
+                   
+           </div>
+           
+           <img src="img/6.png" alt="null" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 0 0-->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:ovasquez@sea.year.org" class="footer__link">ovasquez@sea.year.org</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/azzy/">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <!--<li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>-->
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Azzyman99">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title> devOzzy Portfolio Website</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/5.png" alt="">
+                <button class="nav-toggle" aria-label="toggle naigation">
+                    <span class "hambuger"> </span>
+                </button>
+                <nav class="nav">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!---intro-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong> Osvaldo Tevino Vasquez</strong>
+            </h1>
+            <p class="section__subtile section__subtitle--intro">Aspiring Dev</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LpnLpHT4T20" title="YouTube video player"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+
+
 </html>
